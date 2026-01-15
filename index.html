@@ -1,0 +1,554 @@
+<html lang="en" class="scroll-smooth"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claudelle Shaw Counselling | Healing Starts Here</title>
+    
+    <!-- Fonts: Playfair Display (Serif) and Inter (Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Tailwind Config for Custom Colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1F0E3A',    // Deep Purple
+                        secondary: '#2A124F',  // Lighter Deep Purple
+                        accent: '#B58AF2',     // Lavender
+                        accentSoft: '#C7A3F5', // Soft Lavender
+                        surface: '#F1EAFE',    // Light Surface
+                        surfaceAlt: '#FAF7FD', // Alt Light Surface
+                        border: '#E5E0EC',     // Border
+                        textDark: '#2E2A35',   // Text on Light
+                        textLight: '#FAF7FD',  // Text on Dark
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Utilities */
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* Mobile Menu Toggle Logic */
+        #mobile-menu-toggle:checked ~ #mobile-menu {
+            display: block;
+            animation: fadeIn 0.2s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Gradient Text Utility */
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(to right, #B58AF2, #C7A3F5);
+        }
+
+        .logo-mark {
+            width: 44px;
+            height: 32px;
+            color: #ffffff;
+        }
+
+        .logo-mark path {
+            fill: currentColor !important;
+        }
+    </style>
+</head>
+<body class="bg-surfaceAlt text-textDark font-sans selection:bg-accent selection:text-primary">
+
+    <!-- Header / Sticky Nav -->
+    <header class="fixed top-0 w-full z-50 bg-primary/95 backdrop-blur-md border-b border-white/10 shadow-lg shadow-black/5">
+        
+        <!-- Top Utility Bar (Trust Signals) -->
+        <div class="hidden md:block bg-[#160a2b] py-2">
+            <div class="max-w-6xl mx-auto px-6 flex justify-end items-center gap-6 text-xs text-accentSoft/80 font-medium tracking-wide">
+                <span class="flex items-center gap-2">
+                    <i data-lucide="mail" class="w-3 h-3"></i> cscounselling21@hotmail.com
+                </span>
+                <span class="flex items-center gap-2">
+                    <i data-lucide="file-check" class="w-3 h-3"></i> ABN 79708896801
+                </span>
+            </div>
+        </div>
+
+        <nav class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <svg class="logo-mark flex-shrink-0" viewBox="0 0 867 641" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                    <g transform="matrix(1,0,0,1,-1166.798848,-318.568939)">
+                        <g transform="matrix(1.03125,0,0,1.03125,1105.519677,240.504028)">
+                            <path d="M896.595,429.512C889.652,479.8 867.089,600.345 700.591,664.741C621.793,695.218 517.087,697.709 515.893,696.21C513.95,693.769 557.132,621.436 609.361,567.369C641.42,534.181 670.267,504.439 748.833,447.983C782.517,423.778 783.669,425.676 786.558,423.535C796.44,416.21 776.459,426.395 775.647,426.809C745.618,442.116 640.139,481.327 549.973,604.832C545.235,611.322 520.955,644.579 497.765,690.639C496.532,693.087 495.17,697.639 493.639,696.369C493.204,696.008 489.884,590.912 541.694,500.607C604.944,390.362 721.361,350.248 891.537,333.933C899.022,333.215 896.953,336.948 897.635,344.489C901.871,391.353 897.106,424.697 896.595,429.512Z"/>
+                        </g>
+                        <g transform="matrix(1.03125,0,0,1.03125,1105.519677,240.504028)">
+                            <path d="M446.279,564.569C463.441,621.588 464.837,649.454 466.268,695.435C466.277,695.716 464.959,697.968 463.245,693.655C456.508,676.709 416.185,604.609 370.389,556.604C342.05,526.897 296.521,481.481 205.703,437.074C203.02,435.762 172.636,420.905 171.663,421.747C168.458,424.519 174.662,422.309 215.244,451.854C253.871,479.975 366.846,559.759 438.953,685.238C444.904,695.595 444.524,696.373 443.58,696.657C443.43,696.702 422.988,696.506 397.528,694.227C381.628,692.803 57.574,678.472 59.43,376.499C59.451,373.094 59.682,335.462 63.325,334.107C63.865,333.906 223.395,343.433 314.803,398.005C398.741,448.117 425.299,506.816 446.279,564.569Z"/>
+                        </g>
+                        <g transform="matrix(1.03125,0,0,1.03125,1105.519677,240.504028)">
+                            <path d="M479.726,595.161C472.867,577.156 464.866,433.163 314.345,363.831C302.916,358.567 302.953,358.761 291.424,353.638C288.861,352.498 289.776,350.995 300.925,338.901C329.463,307.945 427.522,254.534 545.406,280.974C548.067,281.571 621.081,298.578 661.29,340.696C671.615,351.512 670.572,352.957 669.456,353.423C598.492,383.093 527.707,424.975 491.86,547.604C490.914,550.843 484.043,574.348 481.796,588.566C481.06,593.221 481.961,593.832 479.726,595.161Z"/>
+                        </g>
+                        <g transform="matrix(1.03125,0,0,1.03125,1105.519677,240.504028)">
+                            <path d="M386.051,163.502C389.14,100.45 443.525,76.93 473.518,75.793C563.846,72.367 597.345,164.081 558.127,218.227C506.088,290.075 384.39,257.059 386.051,163.502Z"/>
+                        </g>
+                    </g>
+                </svg>
+                <div class="flex flex-col">
+                    <span class="text-textLight font-serif text-xl tracking-tight font-semibold leading-none group-hover:text-accent transition-colors">Claudelle Shaw</span>
+                    <span class="text-accentSoft text-xs tracking-[0.2em] uppercase mt-1 opacity-80">Counselling</span>
+                </div>
+            </a>
+
+            <!-- Desktop Links -->
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#about" class="text-sm text-textLight/80 hover:text-accent transition-colors font-medium">About</a>
+                <a href="#approach" class="text-sm text-textLight/80 hover:text-accent transition-colors font-medium">Approach</a>
+                <a href="#support" class="text-sm text-textLight/80 hover:text-accent transition-colors font-medium">Support Areas</a>
+                <a href="#qualifications" class="text-sm text-textLight/80 hover:text-accent transition-colors font-medium">Qualifications</a>
+                <a href="#contact" class="px-5 py-2.5 bg-accent text-primary text-sm font-semibold rounded-full hover:bg-accentSoft hover:shadow-lg hover:shadow-accent/20 transition-all transform hover:-translate-y-0.5">
+                    Contact
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <label for="mobile-menu-toggle" class="md:hidden p-2 text-textLight cursor-pointer">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </label>
+            <input type="checkbox" id="mobile-menu-toggle" class="hidden">
+        </nav>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-secondary border-b border-white/10 shadow-2xl md:hidden">
+            <div class="flex flex-col p-6 gap-4 text-center">
+                <a href="#about" class="text-textLight py-2 hover:text-accent border-b border-white/5">About</a>
+                <a href="#approach" class="text-textLight py-2 hover:text-accent border-b border-white/5">Approach</a>
+                <a href="#support" class="text-textLight py-2 hover:text-accent border-b border-white/5">Support Areas</a>
+                <a href="#qualifications" class="text-textLight py-2 hover:text-accent border-b border-white/5">Qualifications</a>
+                <a href="#contact" class="mt-2 w-full py-3 bg-accent text-primary font-semibold rounded-lg">Contact</a>
+                <div class="mt-4 pt-4 border-t border-white/10 text-xs text-accentSoft/60 flex flex-col gap-2">
+                    <span>cscounselling21@hotmail.com</span>
+                    <span>ABN 79708896801</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-24 md:pt-48 md:pb-32 bg-primary overflow-hidden">
+        
+        <!-- Background Image & Gradient Overlays -->
+        <div class="absolute inset-0 z-0 select-none">
+            <!-- Unsplash Image: Supportive conversation -->
+            <img src="hero-bg.jpg" alt="Claudelle Shaw counselling" class="w-full h-full object-cover opacity-40 mix-blend-luminosity">
+            
+            <!-- Heavy overlay to fade image into primary color (Left to Right) -->
+            <div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/95 to-primary/60"></div>
+            
+            <!-- Bottom Fade to blend with next section area -->
+            <div class="absolute inset-0 bg-gradient-to-b from-primary/30 via-transparent to-primary"></div>
+        </div>
+
+        <!-- Vignette overlay for texture -->
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(181,138,242,0.15),transparent_40%)] z-0 pointer-events-none"></div>
+        
+        <div class="max-w-6xl mx-auto px-6 relative z-10 flex flex-col md:items-start text-center md:text-left">
+            <span class="inline-block py-1 px-3 rounded-full border border-accentSoft/30 bg-white/5 text-accentSoft text-xs font-semibold tracking-widest uppercase mb-6 backdrop-blur-sm animate-fade-in-up">
+                Healing Starts Here
+            </span>
+            
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif text-textLight font-medium tracking-tight leading-[1.1] mb-6 drop-shadow-sm">
+                HEALING <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-accentSoft">Starts Here</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-textLight/90 max-w-2xl font-light leading-relaxed mb-10 drop-shadow-sm">
+                A client centred counselling service grounded in evidence based practice, resilience, and self determination. The approach is relational, collaborative, and shaped around your goals.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start w-full sm:w-auto">
+                <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 bg-accent text-primary font-semibold rounded-xl text-base hover:bg-white hover:shadow-lg hover:shadow-accent/25 transition-all transform hover:-translate-y-0.5">
+                    Contact Me
+                </a>
+                <a href="#approach" class="inline-flex items-center justify-center px-8 py-4 border border-accentSoft/50 text-textLight font-medium rounded-xl text-base hover:bg-white/10 hover:border-accentSoft transition-all backdrop-blur-sm">
+                    Explore the approach
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credibility Highlights -->
+    <section class="py-12 bg-surface border-b border-border">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="flex items-center gap-4 p-4 rounded-xl bg-white border border-border shadow-sm">
+                    <div class="p-3 rounded-lg bg-surfaceAlt text-primary">
+                        <i data-lucide="badge-check" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-textDark">Accredited</h3>
+                        <p class="text-xs text-gray-500">Social Worker</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="flex items-center gap-4 p-4 rounded-xl bg-white border border-border shadow-sm">
+                    <div class="p-3 rounded-lg bg-surfaceAlt text-primary">
+                        <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-textDark">Masters</h3>
+                        <p class="text-xs text-gray-500">in Social Work</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="flex items-center gap-4 p-4 rounded-xl bg-white border border-border shadow-sm">
+                    <div class="p-3 rounded-lg bg-surfaceAlt text-primary">
+                        <i data-lucide="book-open" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-textDark">Grad Diploma</h3>
+                        <p class="text-xs text-gray-500">in Psychology</p>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="flex items-center gap-4 p-4 rounded-xl bg-white border border-border shadow-sm">
+                    <div class="p-3 rounded-lg bg-surfaceAlt text-primary">
+                        <i data-lucide="clock" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-textDark">20 Years</h3>
+                        <p class="text-xs text-gray-500">Counselling Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 md:py-28 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
+                
+                <!-- Left Column Heading -->
+                <div class="lg:col-span-4">
+                    <span class="text-primary font-semibold tracking-wider text-xs uppercase mb-3 block">About the practice</span>
+                    <h2 class="text-3xl md:text-4xl font-serif text-textDark font-medium leading-tight tracking-tight">
+                        A grounded, relational therapeutic approach
+                    </h2>
+                    <div class="h-1 w-20 bg-accent mt-6 rounded-full"></div>
+                </div>
+
+                <!-- Right Column Content -->
+                <div class="lg:col-span-8 space-y-6">
+                    <p class="text-lg text-gray-600 leading-relaxed font-light">
+                        Claudelle provides a client centred and relational approach that promotes resilience and respects self determination. Sessions focus on understanding what is happening for you, strengthening coping skills, and supporting meaningful change at a pace that feels safe and practical.
+                    </p>
+                    <p class="text-base text-gray-600 leading-relaxed">
+                        Experience includes supporting people across diverse community backgrounds and a broad range of social, personal, and mental health concerns, including work in education settings (University and TAFE contexts).
+                    </p>
+
+                    <!-- Callout Card -->
+                    <div class="mt-8 p-6 bg-surface rounded-2xl border border-accent/20 flex gap-4 items-start">
+                        <i data-lucide="sparkles" class="w-5 h-5 text-primary mt-1 flex-shrink-0"></i>
+                        <p class="text-primary font-medium italic">
+                            Evidence based practice supported by ongoing professional development.
+                        </p>
+                    </div>
+                    
+                    <!-- Testimonial 1 -->
+                    <div class="mt-8 border-l-2 border-accent pl-6 py-1">
+                        <blockquote class="text-gray-600 italic">"Calm, practical support that helped me make sense of what I was dealing with."</blockquote>
+                        <cite class="text-xs text-gray-400 mt-2 block not-italic">— Client feedback</cite>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach & Modalities -->
+    <section id="approach" class="py-20 md:py-28 bg-surfaceAlt border-y border-border relative overflow-hidden">
+        <!-- Decorative bg blob -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+
+        <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
+            <h2 class="text-3xl md:text-4xl font-serif text-textDark font-medium tracking-tight mb-6">Evidence based modalities</h2>
+            <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+                Claudelle draws from established therapeutic frameworks. The methods used are selected based on your needs, preferences, and goals.
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-3">
+                <!-- Modality Tags -->
+                <span class="px-4 py-2 bg-white border border-border rounded-lg text-sm text-gray-700 shadow-sm">Trauma focused therapy</span>
+                <span class="px-4 py-2 bg-white border border-border rounded-lg text-sm text-gray-700 shadow-sm">Strength based therapy</span>
+                <span class="px-4 py-2 bg-white border border-border rounded-lg text-sm text-gray-700 shadow-sm">Motivational interviewing</span>
+                <span class="px-4 py-2 bg-white border border-border rounded-lg text-sm text-gray-700 shadow-sm">Narrative therapy</span>
+                <span class="px-4 py-2 bg-white border border-border rounded-lg text-sm text-gray-700 shadow-sm">Attachment theory</span>
+                <span class="px-4 py-2 bg-white border border-border rounded-lg text-sm text-gray-700 shadow-sm">Cognitive behaviour therapy (CBT)</span>
+                <span class="px-4 py-2 bg-white border border-border rounded-lg text-sm text-gray-700 shadow-sm">Solution focused therapy</span>
+                <span class="px-4 py-2 bg-white border border-border rounded-lg text-sm text-gray-700 shadow-sm">Psychodynamic therapy</span>
+                <span class="px-4 py-2 bg-white border border-border rounded-lg text-sm text-gray-700 shadow-sm">Feminist theories of change</span>
+                <span class="px-4 py-2 bg-white border border-border rounded-lg text-sm text-gray-700 shadow-sm">Psycho education</span>
+            </div>
+
+            <p class="mt-8 text-sm text-gray-500 flex items-center justify-center gap-2">
+                <i data-lucide="heart-handshake" class="w-4 h-4 text-accent"></i>
+                You do not need to know what approach you need. We can work it out together.
+            </p>
+        </div>
+    </section>
+
+    <!-- Support Areas -->
+    <section id="support" class="py-20 md:py-28 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="mb-12">
+                <h2 class="text-3xl md:text-4xl font-serif text-textDark font-medium tracking-tight mb-4">Support areas</h2>
+                <p class="text-lg text-gray-600">Support is available for a range of mental health and life challenges, including:</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 mb-16">
+                <!-- List Items -->
+                <div class="flex items-center gap-3 text-gray-700 pb-3 border-b border-gray-50">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-accent"></i> Depression and mood disorders
+                </div>
+                <div class="flex items-center gap-3 text-gray-700 pb-3 border-b border-gray-50">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-accent"></i> Anxiety disorders
+                </div>
+                <div class="flex items-center gap-3 text-gray-700 pb-3 border-b border-gray-50">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-accent"></i> Phobias
+                </div>
+                <div class="flex items-center gap-3 text-gray-700 pb-3 border-b border-gray-50">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-accent"></i> Relationship problems
+                </div>
+                <div class="flex items-center gap-3 text-gray-700 pb-3 border-b border-gray-50">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-accent"></i> Interpersonal difficulties
+                </div>
+                <div class="flex items-center gap-3 text-gray-700 pb-3 border-b border-gray-50">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-accent"></i> Family conflict
+                </div>
+                <div class="flex items-center gap-3 text-gray-700 pb-3 border-b border-gray-50">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-accent"></i> Trauma
+                </div>
+                <div class="flex items-center gap-3 text-gray-700 pb-3 border-b border-gray-50">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-accent"></i> Bipolar disorder
+                </div>
+                <div class="flex items-center gap-3 text-gray-700 pb-3 border-b border-gray-50">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-accent"></i> Life crises and adjustment issues
+                </div>
+                <div class="flex items-center gap-3 text-gray-700 pb-3 border-b border-gray-50">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-accent"></i> Psychosis
+                </div>
+                <div class="flex items-center gap-3 text-gray-700 pb-3 border-b border-gray-50">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-accent"></i> Suicidal thoughts
+                </div>
+                <div class="flex items-center gap-3 text-gray-700 pb-3 border-b border-gray-50">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-accent"></i> Anger management
+                </div>
+                <div class="flex items-center gap-3 text-gray-700 pb-3 border-b border-gray-50">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-accent"></i> Stress management
+                </div>
+                <div class="flex items-center gap-3 text-gray-700 pb-3 border-b border-gray-50">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-accent"></i> Relaxation strategies
+                </div>
+                <div class="flex items-center gap-3 text-gray-700 pb-3 border-b border-gray-50">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-accent"></i> Problem solving
+                </div>
+                <div class="flex items-center gap-3 text-gray-700 pb-3 border-b border-gray-50">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-accent"></i> Self esteem
+                </div>
+                <div class="flex items-center gap-3 text-gray-700 pb-3 border-b border-gray-50">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-accent"></i> Self development
+                </div>
+                <div class="flex items-center gap-3 text-gray-700 pb-3 border-b border-gray-50">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-accent"></i> Behaviour change
+                </div>
+                <div class="flex items-center gap-3 text-gray-700 pb-3 border-b border-gray-50">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-accent"></i> Bereavement and loss
+                </div>
+                <div class="flex items-center gap-3 text-gray-700 pb-3 border-b border-gray-50">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-accent"></i> Sexual abuse
+                </div>
+                <div class="flex items-center gap-3 text-gray-700 pb-3 border-b border-gray-50">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-accent"></i> Family violence
+                </div>
+            </div>
+
+            <!-- Safety Note -->
+            <div class="bg-gray-50 border-l-4 border-gray-300 p-6 rounded-r-lg">
+                <p class="text-sm text-gray-600">
+                    <span class="font-semibold block mb-1 text-gray-800">Important safety note:</span>
+                    If you are in immediate danger or need urgent support, contact local emergency services or a crisis support line in your area.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qualifications -->
+    <section id="qualifications" class="py-20 md:py-28 bg-surface">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-serif text-textDark font-medium tracking-tight mb-12">Qualifications and professional membership</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Col 1 -->
+                <div>
+                    <h3 class="text-lg font-semibold text-primary mb-6 flex items-center gap-2">
+                        <i data-lucide="award" class="w-5 h-5 text-accent"></i> Education
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <span class="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></span>
+                            <span class="text-gray-700 text-base">Masters in Social Work</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></span>
+                            <span class="text-gray-700 text-base">Graduate Diploma in Psychology</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></span>
+                            <span class="text-gray-700 text-base">Graduate Certificate in Client Assessment and Case Management (Men’s Family Violence)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></span>
+                            <span class="text-gray-700 text-base">Graduate Certificate of Career Education and Development</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></span>
+                            <span class="text-gray-700 text-base">Certificate IV in Training and Assessment (TAE)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></span>
+                            <span class="text-gray-700 text-base">Advanced Counselling Skills (Cairn Millar Institute)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></span>
+                            <span class="text-gray-700 text-base">Bachelor of Arts (Journalism and Media Studies)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Col 2 -->
+                <div>
+                    <h3 class="text-lg font-semibold text-primary mb-6 flex items-center gap-2">
+                        <i data-lucide="users" class="w-5 h-5 text-accent"></i> Membership &amp; Development
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <span class="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></span>
+                            <span class="text-gray-700 text-base">Full member of the Australian Association of Social Workers</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></span>
+                            <span class="text-gray-700 text-base">Ongoing professional development</span>
+                        </li>
+                    </ul>
+
+                    <!-- Testimonial 2 -->
+                    <div class="mt-10 p-6 bg-white rounded-xl border border-border shadow-sm">
+                        <div class="flex gap-1 mb-2">
+                            <i data-lucide="star" class="w-4 h-4 fill-accent text-accent"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-accent text-accent"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-accent text-accent"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-accent text-accent"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-accent text-accent"></i>
+                        </div>
+                        <blockquote class="text-gray-600 italic text-sm">"A safe space to talk, and a clear plan to move forward."</blockquote>
+                        <cite class="text-xs text-gray-400 mt-2 block not-italic">— Client feedback</cite>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 md:py-28 bg-surfaceAlt">
+        <div class="max-w-2xl mx-auto px-6">
+            <div class="bg-white p-8 md:p-10 rounded-2xl border border-border shadow-[0_4px_20px_-4px_rgba(31,14,58,0.05)]">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-serif text-primary font-medium tracking-tight mb-3">Contact me</h2>
+                    <p class="text-gray-600">Send a message to enquire about sessions or ask a question. You will receive a reply by email.</p>
+                </div>
+
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full name</label>
+                        <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-border bg-white text-textDark focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all" placeholder="Enter your full name">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email address</label>
+                        <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-border bg-white text-textDark focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all" placeholder="name@example.com">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-border bg-white text-textDark focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all" placeholder="How can I help you?"></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-4 bg-primary text-white font-medium rounded-lg hover:bg-secondary transition-colors shadow-lg shadow-primary/20">
+                        Send message
+                    </button>
+                </form>
+
+                <div class="mt-8 pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-center gap-6 text-sm text-gray-500 text-center">
+                    <div class="flex items-center justify-center gap-2">
+                        <i data-lucide="mail" class="w-4 h-4 text-accent"></i>
+                        cscounselling21@hotmail.com
+                    </div>
+                    <div class="flex items-center justify-center gap-2">
+                        <i data-lucide="file-text" class="w-4 h-4 text-accent"></i>
+                        ABN 79708896801
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-textLight py-12 border-t border-white/5">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-10">
+                <a href="#" class="flex flex-col items-center md:items-start group">
+                    <span class="font-serif text-2xl tracking-tight font-semibold leading-none">Claudelle Shaw</span>
+                    <span class="text-accentSoft text-[10px] tracking-[0.25em] uppercase mt-1 opacity-70">Counselling</span>
+                </a>
+
+                <div class="flex flex-wrap justify-center gap-6 md:gap-8">
+                    <a href="#about" class="text-sm text-accentSoft hover:text-white transition-colors">About</a>
+                    <a href="#approach" class="text-sm text-accentSoft hover:text-white transition-colors">Approach</a>
+                    <a href="#support" class="text-sm text-accentSoft hover:text-white transition-colors">Support</a>
+                    <a href="#contact" class="text-sm text-accentSoft hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-accentSoft/50">
+                <p>© <span id="footer-year">2023</span> CS Counselling. All rights reserved.</p>
+                <p>CS Counselling. ABN 79708896801. Email cscounselling21@hotmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Icons -->
+    <script>
+        const footerYear = document.getElementById('footer-year');
+        if (footerYear) {
+            footerYear.textContent = String(new Date().getFullYear());
+        }
+
+        lucide.createIcons();
+    </script>
+
+</body></html>
