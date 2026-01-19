@@ -1,7 +1,7 @@
 <html lang="en" class="scroll-smooth"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Claudelle Shaw Counselling | Healing Starts Here</title>
+    <title>CS Counselling | Claudelle Shaw</title>
     
     <!-- Fonts: Playfair Display (Serif) and Inter (Sans) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,15 +20,15 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#1F0E3A',    // Deep Purple
-                        secondary: '#2A124F',  // Lighter Deep Purple
-                        accent: '#B58AF2',     // Lavender
-                        accentSoft: '#C7A3F5', // Soft Lavender
-                        surface: '#F1EAFE',    // Light Surface
-                        surfaceAlt: '#FAF7FD', // Alt Light Surface
-                        border: '#E5E0EC',     // Border
-                        textDark: '#2E2A35',   // Text on Light
-                        textLight: '#FAF7FD',  // Text on Dark
+                        primary: '#4B2F73',    // Light Purple
+                        secondary: '#5B3D86',  // Soft Purple
+                        accent: '#C7A6F2',     // Lavender
+                        accentSoft: '#E1D0FA', // Soft Lavender
+                        surface: '#F6F0FF',    // Light Surface
+                        surfaceAlt: '#FBF8FF', // Alt Light Surface
+                        border: '#E9DFF5',     // Border
+                        textDark: '#2D2534',   // Text on Light
+                        textLight: '#FFFFFF',  // Text on Dark
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
@@ -82,7 +82,7 @@
     <header class="fixed top-0 w-full z-50 bg-primary/95 backdrop-blur-md border-b border-white/10 shadow-lg shadow-black/5">
         
         <!-- Top Utility Bar (Trust Signals) -->
-        <div class="hidden md:block bg-[#160a2b] py-2">
+        <div class="hidden md:block bg-secondary/90 py-2">
             <div class="max-w-6xl mx-auto px-6 flex justify-end items-center gap-6 text-xs text-accentSoft/80 font-medium tracking-wide">
                 <span class="flex items-center gap-2">
                     <i data-lucide="mail" class="w-3 h-3"></i> cscounselling21@hotmail.com
@@ -120,10 +120,9 @@
 
             <!-- Desktop Links -->
             <div class="hidden md:flex items-center gap-8">
+                <a href="#home" class="text-sm text-textLight/80 hover:text-accent transition-colors font-medium">Home</a>
                 <a href="#about" class="text-sm text-textLight/80 hover:text-accent transition-colors font-medium">About</a>
-                <a href="#approach" class="text-sm text-textLight/80 hover:text-accent transition-colors font-medium">Approach</a>
-                <a href="#support" class="text-sm text-textLight/80 hover:text-accent transition-colors font-medium">Support Areas</a>
-                <a href="#qualifications" class="text-sm text-textLight/80 hover:text-accent transition-colors font-medium">Qualifications</a>
+                <a href="#services" class="text-sm text-textLight/80 hover:text-accent transition-colors font-medium">Services</a>
                 <a href="#contact" class="px-5 py-2.5 bg-accent text-primary text-sm font-semibold rounded-full hover:bg-accentSoft hover:shadow-lg hover:shadow-accent/20 transition-all transform hover:-translate-y-0.5">
                     Contact
                 </a>
@@ -139,10 +138,9 @@
         <!-- Mobile Menu Dropdown -->
         <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-secondary border-b border-white/10 shadow-2xl md:hidden">
             <div class="flex flex-col p-6 gap-4 text-center">
+                <a href="#home" class="text-textLight py-2 hover:text-accent border-b border-white/5">Home</a>
                 <a href="#about" class="text-textLight py-2 hover:text-accent border-b border-white/5">About</a>
-                <a href="#approach" class="text-textLight py-2 hover:text-accent border-b border-white/5">Approach</a>
-                <a href="#support" class="text-textLight py-2 hover:text-accent border-b border-white/5">Support Areas</a>
-                <a href="#qualifications" class="text-textLight py-2 hover:text-accent border-b border-white/5">Qualifications</a>
+                <a href="#services" class="text-textLight py-2 hover:text-accent border-b border-white/5">Services</a>
                 <a href="#contact" class="mt-2 w-full py-3 bg-accent text-primary font-semibold rounded-lg">Contact</a>
                 <div class="mt-4 pt-4 border-t border-white/10 text-xs text-accentSoft/60 flex flex-col gap-2">
                     <span>cscounselling21@hotmail.com</span>
@@ -153,7 +151,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="relative pt-32 pb-24 md:pt-48 md:pb-32 bg-primary overflow-hidden">
+    <section id="home" class="relative pt-32 pb-24 md:pt-48 md:pb-32 bg-primary overflow-hidden">
         
         <!-- Background Image & Gradient Overlays -->
         <div class="absolute inset-0 z-0 select-none">
@@ -168,20 +166,24 @@
         </div>
 
         <!-- Vignette overlay for texture -->
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(181,138,242,0.15),transparent_40%)] z-0 pointer-events-none"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(199,166,242,0.15),transparent_40%)] z-0 pointer-events-none"></div>
         
         <div class="max-w-6xl mx-auto px-6 relative z-10 flex flex-col md:items-start text-center md:text-left">
             <span class="inline-block py-1 px-3 rounded-full border border-accentSoft/30 bg-white/5 text-accentSoft text-xs font-semibold tracking-widest uppercase mb-6 backdrop-blur-sm animate-fade-in-up">
-                Healing Starts Here
+                Counselling to heal and navigate life's challenges
             </span>
             
             <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif text-textLight font-medium tracking-tight leading-[1.1] mb-6 drop-shadow-sm">
-                HEALING <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-accentSoft">Starts Here</span>
+                CS <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-accentSoft">Counselling</span>
             </h1>
             
-            <p class="text-lg md:text-xl text-textLight/90 max-w-2xl font-light leading-relaxed mb-10 drop-shadow-sm">
-                A client centred counselling service grounded in evidence based practice, resilience, and self determination. The approach is relational, collaborative, and shaped around your goals.
+            <p class="text-lg md:text-xl text-textLight/90 max-w-2xl font-light leading-relaxed mb-6 drop-shadow-sm">
+                Taking the first step toward emotional wellbeing can feel daunting, yet it is also a powerful act of self-care. Whether you're navigating personal change, relationship difficulties, family challenges, or the lasting impact of past experiences, you deserve support that feels safe, understanding, and genuinely compassionate.
             </p>
+
+            <blockquote class="max-w-2xl text-textLight/80 italic text-base md:text-lg mb-10">
+                "You can't change the past, but you can change the future by starting from where you are." <span class="not-italic text-textLight/70">— C.S. Lewis</span>
+            </blockquote>
             
             <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start w-full sm:w-auto">
                 <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 bg-accent text-primary font-semibold rounded-xl text-base hover:bg-white hover:shadow-lg hover:shadow-accent/25 transition-all transform hover:-translate-y-0.5">
@@ -258,26 +260,21 @@
 
                 <!-- Right Column Content -->
                 <div class="lg:col-span-8 space-y-6">
-                    <p class="text-lg text-gray-600 leading-relaxed font-light">
-                        Claudelle provides a client centred and relational approach that promotes resilience and respects self determination. Sessions focus on understanding what is happening for you, strengthening coping skills, and supporting meaningful change at a pace that feels safe and practical.
-                    </p>
-                    <p class="text-base text-gray-600 leading-relaxed">
-                        Experience includes supporting people across diverse community backgrounds and a broad range of social, personal, and mental health concerns, including work in education settings (University and TAFE contexts).
-                    </p>
-
-                    <!-- Callout Card -->
-                    <div class="mt-8 p-6 bg-surface rounded-2xl border border-accent/20 flex gap-4 items-start">
-                        <i data-lucide="sparkles" class="w-5 h-5 text-primary mt-1 flex-shrink-0"></i>
-                        <p class="text-primary font-medium italic">
-                            Evidence based practice supported by ongoing professional development.
+                    <div class="flex flex-col sm:flex-row gap-6 items-start">
+                        <img src="Claudelle.jpg" alt="Claudelle Shaw" class="w-24 h-24 sm:w-28 sm:h-28 rounded-full object-cover border-4 border-white shadow-lg">
+                        <p class="text-lg text-gray-600 leading-relaxed font-light">
+                            At Claudelle Shaw (CS) Counselling, you are met with respect, empathy, and care. I offer a calm, confidential space where individuals and couples can explore what may be holding them back, gain insight into their emotions, and begin moving forward with greater clarity and confidence.
                         </p>
                     </div>
-                    
-                    <!-- Testimonial 1 -->
-                    <div class="mt-8 border-l-2 border-accent pl-6 py-1">
-                        <blockquote class="text-gray-600 italic">"Calm, practical support that helped me make sense of what I was dealing with."</blockquote>
-                        <cite class="text-xs text-gray-400 mt-2 block not-italic">— Client feedback</cite>
-                    </div>
+                    <p class="text-base text-gray-600 leading-relaxed">
+                        Life transitions - such as relationship breakdowns, career changes, parenthood, grief, or trauma - can leave you feeling overwhelmed, stuck in survival mode, or disconnected from yourself. You may notice persistent worry, racing thoughts, emotional exhaustion, or uncertainty about what comes next. These experiences are deeply human, and you don't have to face them alone.
+                    </p>
+                    <p class="text-base text-gray-600 leading-relaxed">
+                        My client-centred approach is grounded in collaboration, understanding, and evidence-based support. Working together at your pace, we focus on building resilience, rebuilding trust in yourself, and developing practical strategies that support meaningful and lasting change.
+                    </p>
+                    <p class="text-base text-gray-600 leading-relaxed">
+                        The aim is not just to cope, but to help you reconnect with your authentic self, feel empowered in your choices, and create a life that feels balanced, fulfilling, and aligned with your values - now and into the future.
+                    </p>
                 </div>
             </div>
         </div>
@@ -316,10 +313,10 @@
     </section>
 
     <!-- Support Areas -->
-    <section id="support" class="py-20 md:py-28 bg-white">
+    <section id="services" class="py-20 md:py-28 bg-white">
         <div class="max-w-6xl mx-auto px-6">
             <div class="mb-12">
-                <h2 class="text-3xl md:text-4xl font-serif text-textDark font-medium tracking-tight mb-4">Support areas</h2>
+                <h2 class="text-3xl md:text-4xl font-serif text-textDark font-medium tracking-tight mb-4">Services</h2>
                 <p class="text-lg text-gray-600">Support is available for a range of mental health and life challenges, including:</p>
             </div>
 
@@ -479,24 +476,24 @@
     <!-- Contact Section -->
     <section id="contact" class="py-20 md:py-28 bg-surfaceAlt">
         <div class="max-w-2xl mx-auto px-6">
-            <div class="bg-white p-8 md:p-10 rounded-2xl border border-border shadow-[0_4px_20px_-4px_rgba(31,14,58,0.05)]">
+            <div class="bg-white p-8 md:p-10 rounded-2xl border border-border shadow-[0_4px_20px_-4px_rgba(75,47,115,0.08)]">
                 <div class="text-center mb-8">
                     <h2 class="text-3xl font-serif text-primary font-medium tracking-tight mb-3">Contact me</h2>
                     <p class="text-gray-600">Send a message to enquire about sessions or ask a question. You will receive a reply by email.</p>
                 </div>
 
-                <form class="space-y-6">
+                <form class="space-y-6" action="https://submit-form.com/LHPddz1qH">
                     <div>
                         <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full name</label>
-                        <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-border bg-white text-textDark focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all" placeholder="Enter your full name">
+                        <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg border border-border bg-white text-textDark focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all" placeholder="Enter your full name">
                     </div>
                     <div>
                         <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email address</label>
-                        <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-border bg-white text-textDark focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all" placeholder="name@example.com">
+                        <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg border border-border bg-white text-textDark focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all" placeholder="name@example.com">
                     </div>
                     <div>
                         <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
-                        <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-border bg-white text-textDark focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all" placeholder="How can I help you?"></textarea>
+                        <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-border bg-white text-textDark focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all" placeholder="How can I help you?"></textarea>
                     </div>
                     <button type="submit" class="w-full py-4 bg-primary text-white font-medium rounded-lg hover:bg-secondary transition-colors shadow-lg shadow-primary/20">
                         Send message
@@ -527,9 +524,9 @@
                 </a>
 
                 <div class="flex flex-wrap justify-center gap-6 md:gap-8">
+                    <a href="#home" class="text-sm text-accentSoft hover:text-white transition-colors">Home</a>
                     <a href="#about" class="text-sm text-accentSoft hover:text-white transition-colors">About</a>
-                    <a href="#approach" class="text-sm text-accentSoft hover:text-white transition-colors">Approach</a>
-                    <a href="#support" class="text-sm text-accentSoft hover:text-white transition-colors">Support</a>
+                    <a href="#services" class="text-sm text-accentSoft hover:text-white transition-colors">Services</a>
                     <a href="#contact" class="text-sm text-accentSoft hover:text-white transition-colors">Contact</a>
                 </div>
             </div>
