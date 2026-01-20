@@ -1,19 +1,22 @@
-<html lang="en" class="scroll-smooth"><head>
+<html lang="en" class="scroll-smooth">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Claudelle Shaw Counselling | Claudelle Shaw</title>
-    
+
     <!-- Fonts: Playfair Display (Serif) and Aptos (Local) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&amp;display=swap"
+        rel="stylesheet">
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    
+
     <!-- Tailwind Config for Custom Colors -->
     <script>
         tailwind.config = {
@@ -85,16 +88,23 @@
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
-        
+
         /* Mobile Menu Toggle Logic */
-        #mobile-menu-toggle:checked ~ #mobile-menu {
+        #mobile-menu-toggle:checked~#mobile-menu {
             display: block;
             animation: fadeIn 0.2s ease-out;
         }
-        
+
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-10px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         /* Gradient Text Utility */
@@ -116,19 +126,22 @@
         }
     </style>
 </head>
+
 <body class="bg-surfaceAlt text-textDark font-sans selection:bg-accent selection:text-primary">
 
     <!-- Header / Sticky Nav -->
-    <header class="fixed top-0 w-full z-50 bg-[#6E5B9A] backdrop-blur-md border-b border-white/10 shadow-lg shadow-black/5">
-        
+    <header
+        class="fixed top-0 w-full z-50 bg-[#6E5B9A] backdrop-blur-md border-b border-white/10 shadow-lg shadow-black/5">
+
         <!-- Top Utility Bar (Trust Signals) -->
         <div class="hidden md:block bg-[#D7C8ED] py-2">
-            <div class="max-w-6xl mx-auto px-6 flex justify-end items-center gap-6 text-xs text-black font-medium tracking-wide">
+            <div
+                class="max-w-6xl mx-auto px-6 flex justify-end items-center gap-6 text-xs text-black font-medium tracking-wide">
                 <span class="flex items-center gap-2">
                     <i data-lucide="mail" class="w-3 h-3"></i> claudelleshaw@hotmail.com
                 </span>
                 <span class="flex items-center gap-2">
-                    <i data-lucide="file-check" class="w-3 h-3"></i> ABN 79708896801
+                    <i data-lucide="phone" class="w-3 h-3"></i> 0400 000 000
                 </span>
             </div>
         </div>
@@ -136,34 +149,45 @@
         <nav class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
             <!-- Logo -->
             <a href="index.html" class="flex items-center gap-3 group">
-                <svg class="logo-mark flex-shrink-0" viewBox="0 0 867 641" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                <svg class="logo-mark flex-shrink-0" viewBox="0 0 867 641" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+                    style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
                     <g transform="matrix(1,0,0,1,-1166.798848,-318.568939)">
                         <g transform="matrix(1.03125,0,0,1.03125,1105.519677,240.504028)">
-                            <path d="M896.595,429.512C889.652,479.8 867.089,600.345 700.591,664.741C621.793,695.218 517.087,697.709 515.893,696.21C513.95,693.769 557.132,621.436 609.361,567.369C641.42,534.181 670.267,504.439 748.833,447.983C782.517,423.778 783.669,425.676 786.558,423.535C796.44,416.21 776.459,426.395 775.647,426.809C745.618,442.116 640.139,481.327 549.973,604.832C545.235,611.322 520.955,644.579 497.765,690.639C496.532,693.087 495.17,697.639 493.639,696.369C493.204,696.008 489.884,590.912 541.694,500.607C604.944,390.362 721.361,350.248 891.537,333.933C899.022,333.215 896.953,336.948 897.635,344.489C901.871,391.353 897.106,424.697 896.595,429.512Z"/>
+                            <path
+                                d="M896.595,429.512C889.652,479.8 867.089,600.345 700.591,664.741C621.793,695.218 517.087,697.709 515.893,696.21C513.95,693.769 557.132,621.436 609.361,567.369C641.42,534.181 670.267,504.439 748.833,447.983C782.517,423.778 783.669,425.676 786.558,423.535C796.44,416.21 776.459,426.395 775.647,426.809C745.618,442.116 640.139,481.327 549.973,604.832C545.235,611.322 520.955,644.579 497.765,690.639C496.532,693.087 495.17,697.639 493.639,696.369C493.204,696.008 489.884,590.912 541.694,500.607C604.944,390.362 721.361,350.248 891.537,333.933C899.022,333.215 896.953,336.948 897.635,344.489C901.871,391.353 897.106,424.697 896.595,429.512Z" />
                         </g>
                         <g transform="matrix(1.03125,0,0,1.03125,1105.519677,240.504028)">
-                            <path d="M446.279,564.569C463.441,621.588 464.837,649.454 466.268,695.435C466.277,695.716 464.959,697.968 463.245,693.655C456.508,676.709 416.185,604.609 370.389,556.604C342.05,526.897 296.521,481.481 205.703,437.074C203.02,435.762 172.636,420.905 171.663,421.747C168.458,424.519 174.662,422.309 215.244,451.854C253.871,479.975 366.846,559.759 438.953,685.238C444.904,695.595 444.524,696.373 443.58,696.657C443.43,696.702 422.988,696.506 397.528,694.227C381.628,692.803 57.574,678.472 59.43,376.499C59.451,373.094 59.682,335.462 63.325,334.107C63.865,333.906 223.395,343.433 314.803,398.005C398.741,448.117 425.299,506.816 446.279,564.569Z"/>
+                            <path
+                                d="M446.279,564.569C463.441,621.588 464.837,649.454 466.268,695.435C466.277,695.716 464.959,697.968 463.245,693.655C456.508,676.709 416.185,604.609 370.389,556.604C342.05,526.897 296.521,481.481 205.703,437.074C203.02,435.762 172.636,420.905 171.663,421.747C168.458,424.519 174.662,422.309 215.244,451.854C253.871,479.975 366.846,559.759 438.953,685.238C444.904,695.595 444.524,696.373 443.58,696.657C443.43,696.702 422.988,696.506 397.528,694.227C381.628,692.803 57.574,678.472 59.43,376.499C59.451,373.094 59.682,335.462 63.325,334.107C63.865,333.906 223.395,343.433 314.803,398.005C398.741,448.117 425.299,506.816 446.279,564.569Z" />
                         </g>
                         <g transform="matrix(1.03125,0,0,1.03125,1105.519677,240.504028)">
-                            <path d="M479.726,595.161C472.867,577.156 464.866,433.163 314.345,363.831C302.916,358.567 302.953,358.761 291.424,353.638C288.861,352.498 289.776,350.995 300.925,338.901C329.463,307.945 427.522,254.534 545.406,280.974C548.067,281.571 621.081,298.578 661.29,340.696C671.615,351.512 670.572,352.957 669.456,353.423C598.492,383.093 527.707,424.975 491.86,547.604C490.914,550.843 484.043,574.348 481.796,588.566C481.06,593.221 481.961,593.832 479.726,595.161Z"/>
+                            <path
+                                d="M479.726,595.161C472.867,577.156 464.866,433.163 314.345,363.831C302.916,358.567 302.953,358.761 291.424,353.638C288.861,352.498 289.776,350.995 300.925,338.901C329.463,307.945 427.522,254.534 545.406,280.974C548.067,281.571 621.081,298.578 661.29,340.696C671.615,351.512 670.572,352.957 669.456,353.423C598.492,383.093 527.707,424.975 491.86,547.604C490.914,550.843 484.043,574.348 481.796,588.566C481.06,593.221 481.961,593.832 479.726,595.161Z" />
                         </g>
                         <g transform="matrix(1.03125,0,0,1.03125,1105.519677,240.504028)">
-                            <path d="M386.051,163.502C389.14,100.45 443.525,76.93 473.518,75.793C563.846,72.367 597.345,164.081 558.127,218.227C506.088,290.075 384.39,257.059 386.051,163.502Z"/>
+                            <path
+                                d="M386.051,163.502C389.14,100.45 443.525,76.93 473.518,75.793C563.846,72.367 597.345,164.081 558.127,218.227C506.088,290.075 384.39,257.059 386.051,163.502Z" />
                         </g>
                     </g>
                 </svg>
                 <div class="flex flex-col">
-                    <span class="text-textLight font-serif text-xl tracking-tight font-semibold leading-none">Claudelle Shaw</span>
+                    <span class="text-textLight font-serif text-xl tracking-tight font-semibold leading-none">Claudelle
+                        Shaw</span>
                     <span class="text-accentSoft text-xs tracking-[0.2em] uppercase mt-1 opacity-80">Counselling</span>
                 </div>
             </a>
 
             <!-- Desktop Links -->
             <div class="hidden md:flex items-center gap-8">
-                <a href="index.html" class="text-sm text-textLight/80 hover:text-accent transition-colors font-medium">Home</a>
-                <a href="about.html" class="text-sm text-textLight/80 hover:text-accent transition-colors font-medium">About</a>
-                <a href="services.html" class="text-sm text-textLight/80 hover:text-accent transition-colors font-medium">Services</a>
-                <a href="index.html#contact" class="px-5 py-2.5 bg-[#B29CE4] text-black text-sm font-semibold rounded-full hover:opacity-90 hover:shadow-lg hover:shadow-black/10 transition-all transform hover:-translate-y-0.5">
+                <a href="index.html"
+                    class="text-sm text-textLight/80 hover:text-accent transition-colors font-medium">Home</a>
+                <a href="about.html"
+                    class="text-sm text-textLight/80 hover:text-accent transition-colors font-medium">About</a>
+                <a href="services.html"
+                    class="text-sm text-textLight/80 hover:text-accent transition-colors font-medium">Services</a>
+                <a href="index.html#contact"
+                    class="px-5 py-2.5 bg-[#B29CE4] text-black text-sm font-semibold rounded-full hover:opacity-90 hover:shadow-lg hover:shadow-black/10 transition-all transform hover:-translate-y-0.5">
                     Contact
                 </a>
             </div>
@@ -176,60 +200,65 @@
         </nav>
 
         <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-[#D7C8ED] border-b border-white/10 shadow-2xl md:hidden">
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-[#D7C8ED] border-b border-white/10 shadow-2xl md:hidden">
             <div class="flex flex-col p-6 gap-4 text-center">
                 <a href="index.html" class="text-black py-2 hover:text-primary border-b border-white/5">Home</a>
                 <a href="about.html" class="text-black py-2 hover:text-primary border-b border-white/5">About</a>
                 <a href="services.html" class="text-black py-2 hover:text-primary border-b border-white/5">Services</a>
-                <a href="index.html#contact" class="mt-2 w-full py-3 bg-[#B29CE4] text-black font-semibold rounded-lg hover:opacity-90">Contact</a>
+                <a href="index.html#contact"
+                    class="mt-2 w-full py-3 bg-[#B29CE4] text-black font-semibold rounded-lg hover:opacity-90">Contact</a>
                 <div class="mt-4 pt-4 border-t border-white/10 text-xs text-black flex flex-col gap-2">
                     <span>claudelleshaw@hotmail.com</span>
-                    <span>ABN 79708896801</span>
+                    <span>0400 000 000</span>
                 </div>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="relative pt-32 pb-24 md:pt-48 md:pb-32 bg-[#E0D4FC] overflow-hidden">
-        
-        <!-- Background Image & Gradient Overlays -->
+    <section id="home" class="relative pt-32 pb-24 md:pt-48 md:pb-32 overflow-hidden bg-black">
+
+        <!-- Background Image & Overlay -->
         <div class="absolute inset-0 z-0 select-none">
             <!-- Unsplash Image: Supportive conversation -->
-            <img src="hero-bg.jpg" alt="Claudelle Shaw counselling" class="w-full h-full object-cover opacity-40 mix-blend-luminosity">
-            
-            <!-- Heavy overlay to fade image into primary color (Left to Right) -->
-            <div class="absolute inset-0 bg-gradient-to-r from-black/35 via-black/15 to-black/0"></div>
-            
-            <!-- Bottom Fade to blend with next section area -->
-            <div class="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/30"></div>
+            <img src="hero-bg.jpg" alt="Claudelle Shaw counselling" class="w-full h-full object-cover opacity-80">
+            <!-- Lighter gradient overlay for better image visibility while keeping text readable -->
+            <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/20 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/10"></div>
         </div>
 
-        <!-- Vignette overlay for texture -->
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(199,166,242,0.15),transparent_40%)] z-0 pointer-events-none"></div>
-        
         <div class="max-w-6xl mx-auto px-6 relative z-10 flex flex-col md:items-start text-center md:text-left">
-            <span class="inline-block py-1 px-3 rounded-full border border-accentSoft/30 bg-white/5 text-accentSoft text-xs font-semibold tracking-widest uppercase mb-6 backdrop-blur-sm animate-fade-in-up">
+            <span
+                class="inline-block py-1 px-3 rounded-full border border-white/20 bg-white/10 text-white text-xs font-semibold tracking-widest uppercase mb-6 backdrop-blur-sm animate-fade-in-up">
                 Counselling to heal and navigate life's challenges
             </span>
-            
-            <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif text-textLight font-medium tracking-tight leading-[1.1] mb-6 drop-shadow-sm">
-                Claudelle Shaw <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-accentSoft">Counselling</span>
+
+            <h1
+                class="text-4xl md:text-6xl lg:text-7xl font-serif text-white font-medium tracking-tight leading-[1.1] mb-6 drop-shadow-lg">
+                Claudelle Shaw <br> <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-[#C7A6F2] to-[#B29CE4]">Counselling</span>
             </h1>
-            
-            <p class="text-lg md:text-xl text-textLight/90 max-w-2xl font-light leading-relaxed mb-6 drop-shadow-sm">
-                Taking the first step toward emotional wellbeing can feel daunting, yet it is also a powerful act of self-care. Whether you're navigating personal change, relationship difficulties, family challenges, or the lasting impact of past experiences, you deserve support that feels safe, understanding, and genuinely compassionate.
+
+            <p class="text-lg md:text-xl text-white/90 max-w-2xl font-light leading-relaxed mb-6 drop-shadow-md">
+                Taking the first step toward emotional wellbeing can feel daunting, yet it is also a powerful act of
+                self-care. Whether you're navigating personal change, relationship difficulties, family challenges, or
+                the lasting impact of past experiences, you deserve support that feels safe, understanding, and
+                genuinely compassionate.
             </p>
 
-            <blockquote class="max-w-2xl text-textLight/80 italic text-base md:text-lg mb-10">
-                "You can't change the past, but you can change the future by starting from where you are." <span class="not-italic text-textLight/70">— C.S. Lewis</span>
+            <blockquote class="max-w-2xl text-white/80 italic text-base md:text-lg mb-10 drop-shadow-md">
+                "You can't change the past, but you can change the future by starting from where you are." <span
+                    class="not-italic text-white/70">— C.S. Lewis</span>
             </blockquote>
-            
+
             <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start w-full sm:w-auto">
-                <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 bg-[#B29CE4] text-black font-semibold rounded-xl text-base hover:opacity-90 hover:shadow-lg hover:shadow-black/10 transition-all transform hover:-translate-y-0.5">
+                <a href="#contact"
+                    class="inline-flex items-center justify-center px-8 py-4 bg-[#B29CE4] text-black font-semibold rounded-xl text-base hover:opacity-90 hover:shadow-lg hover:shadow-black/20 transition-all transform hover:-translate-y-0.5">
                     Contact Me
                 </a>
-                <a href="#approach" class="inline-flex items-center justify-center px-8 py-4 border border-accentSoft/50 text-textLight font-medium rounded-xl text-base hover:bg-white/10 hover:border-accentSoft transition-all backdrop-blur-sm">
+                <a href="#approach"
+                    class="inline-flex items-center justify-center px-8 py-4 border border-white/30 text-white font-medium rounded-xl text-base hover:bg-white/10 transition-all backdrop-blur-sm">
                     Explore the approach
                 </a>
             </div>
@@ -239,8 +268,9 @@
     <!-- About Heading -->
     <section class="py-12 bg-surface border-b border-border">
         <div class="max-w-6xl mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-serif text-textDark font-medium tracking-tight">About Claudelle Shaw Counselling</h2>
-            <p class="text-lg text-black mt-3">A grounded, relational therapeutic approach.</p>
+            <h2 class="text-3xl md:text-4xl font-serif text-textDark font-medium tracking-tight">About Claudelle Shaw
+                Counselling</h2>
+            <p class="text-lg text-black mt-3 italic">"A safe, calm, confidential space"</p>
         </div>
     </section>
 
@@ -248,10 +278,11 @@
     <section id="about" class="py-20 md:py-28 bg-white">
         <div class="max-w-6xl mx-auto px-6">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
-                
+
                 <!-- Left Column Heading -->
                 <div class="lg:col-span-4">
-                    <span class="text-primary font-semibold tracking-wider text-xs uppercase mb-3 block">About the practice</span>
+                    <span class="text-primary font-semibold tracking-wider text-xs uppercase mb-3 block">About the
+                        practice</span>
                     <h2 class="text-3xl md:text-4xl font-serif text-textDark font-medium leading-tight tracking-tight">
                         A grounded, relational therapeutic approach
                     </h2>
@@ -261,19 +292,30 @@
                 <!-- Right Column Content -->
                 <div class="lg:col-span-8 space-y-6">
                     <div class="flex flex-col sm:flex-row gap-6 items-start">
-                        <img src="Claudelle.jpg" alt="Claudelle Shaw" class="w-24 h-24 sm:w-28 sm:h-28 rounded-full object-cover border-4 border-white shadow-lg">
+                        <img src="Claudelle.jpg" alt="Claudelle Shaw"
+                            class="w-24 h-24 sm:w-28 sm:h-28 rounded-full object-cover border-4 border-white shadow-lg">
                         <p class="text-lg text-black leading-relaxed font-light">
-                            At Claudelle Shaw Counselling, you are met with respect, empathy, and care. I offer a calm, confidential space where individuals and couples can explore what may be holding them back, gain insight into their emotions, and begin moving forward with greater clarity and confidence.
+                            At Claudelle Shaw Counselling, you are met with respect, empathy, and care. I offer a calm,
+                            confidential space where individuals and couples can explore what may be holding them back,
+                            gain insight into their emotions, and begin moving forward with greater clarity and
+                            confidence.
                         </p>
                     </div>
                     <p class="text-base text-black leading-relaxed">
-                        Life transitions - such as relationship breakdowns, career changes, parenthood, grief, or trauma - can leave you feeling overwhelmed, stuck in survival mode, or disconnected from yourself. You may notice persistent worry, racing thoughts, emotional exhaustion, or uncertainty about what comes next. These experiences are deeply human, and you don't have to face them alone.
+                        Life transitions - such as relationship breakdowns, career changes, parenthood, grief, or trauma
+                        - can leave you feeling overwhelmed, stuck in survival mode, or disconnected from yourself. You
+                        may notice persistent worry, racing thoughts, emotional exhaustion, or uncertainty about what
+                        comes next. These experiences are deeply human, and you don't have to face them alone.
                     </p>
                     <p class="text-base text-black leading-relaxed">
-                        My client-centred approach is grounded in collaboration, understanding, and evidence-based support. Working together at your pace, we focus on building resilience, rebuilding trust in yourself, and developing practical strategies that support meaningful and lasting change.
+                        My client-centred approach is grounded in collaboration, understanding, and evidence-based
+                        support. Working together at your pace, we focus on building resilience, rebuilding trust in
+                        yourself, and developing practical strategies that support meaningful and lasting change.
                     </p>
                     <p class="text-base text-black leading-relaxed">
-                        The aim is not just to cope, but to help you reconnect with your authentic self, feel empowered in your choices, and create a life that feels balanced, fulfilling, and aligned with your values - now and into the future.
+                        The aim is not just to cope, but to help you reconnect with your authentic self, feel empowered
+                        in your choices, and create a life that feels balanced, fulfilling, and aligned with your values
+                        - now and into the future.
                     </p>
                 </div>
             </div>
@@ -283,26 +325,42 @@
     <!-- Approach & Modalities -->
     <section id="approach" class="py-20 md:py-28 bg-surfaceAlt border-y border-border relative overflow-hidden">
         <!-- Decorative bg blob -->
-        <div class="absolute top-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+        <div
+            class="absolute top-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2">
+        </div>
 
         <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
-            <h2 class="text-3xl md:text-4xl font-serif text-textDark font-medium tracking-tight mb-6">Evidence based modalities</h2>
+            <h2 class="text-3xl md:text-4xl font-serif text-textDark font-medium tracking-tight mb-6">Evidence based
+                modalities</h2>
             <p class="text-lg text-black mb-12 max-w-2xl mx-auto">
-                Claudelle draws from established therapeutic frameworks. The methods used are selected based on your needs, preferences, and goals.
+                Claudelle draws from established therapeutic frameworks. The methods used are selected based on your
+                needs, preferences, and goals.
             </p>
 
             <div class="flex flex-wrap justify-center gap-3">
                 <!-- Modality Tags -->
-                <span class="px-4 py-2 bg-white border border-border rounded-lg text-sm text-black shadow-sm">Trauma focused therapy</span>
-                <span class="px-4 py-2 bg-white border border-border rounded-lg text-sm text-black shadow-sm">Strength based therapy</span>
-                <span class="px-4 py-2 bg-white border border-border rounded-lg text-sm text-black shadow-sm">Motivational interviewing</span>
-                <span class="px-4 py-2 bg-white border border-border rounded-lg text-sm text-black shadow-sm">Narrative therapy</span>
-                <span class="px-4 py-2 bg-white border border-border rounded-lg text-sm text-black shadow-sm">Attachment theory</span>
-                <span class="px-4 py-2 bg-white border border-border rounded-lg text-sm text-black shadow-sm">Cognitive behaviour therapy (CBT)</span>
-                <span class="px-4 py-2 bg-white border border-border rounded-lg text-sm text-black shadow-sm">Solution focused therapy</span>
-                <span class="px-4 py-2 bg-white border border-border rounded-lg text-sm text-black shadow-sm">Psychodynamic therapy</span>
-                <span class="px-4 py-2 bg-white border border-border rounded-lg text-sm text-black shadow-sm">Feminist theories of change</span>
-                <span class="px-4 py-2 bg-white border border-border rounded-lg text-sm text-black shadow-sm">Psychoeducation</span>
+                <span class="px-4 py-2 bg-white border border-border rounded-lg text-sm text-black shadow-sm">Trauma
+                    focused therapy</span>
+                <span class="px-4 py-2 bg-white border border-border rounded-lg text-sm text-black shadow-sm">Strength
+                    based therapy</span>
+                <span
+                    class="px-4 py-2 bg-white border border-border rounded-lg text-sm text-black shadow-sm">Motivational
+                    interviewing</span>
+                <span class="px-4 py-2 bg-white border border-border rounded-lg text-sm text-black shadow-sm">Narrative
+                    therapy</span>
+                <span class="px-4 py-2 bg-white border border-border rounded-lg text-sm text-black shadow-sm">Attachment
+                    theory</span>
+                <span class="px-4 py-2 bg-white border border-border rounded-lg text-sm text-black shadow-sm">Cognitive
+                    behaviour therapy (CBT)</span>
+                <span class="px-4 py-2 bg-white border border-border rounded-lg text-sm text-black shadow-sm">Solution
+                    focused therapy</span>
+                <span
+                    class="px-4 py-2 bg-white border border-border rounded-lg text-sm text-black shadow-sm">Psychodynamic
+                    therapy</span>
+                <span class="px-4 py-2 bg-white border border-border rounded-lg text-sm text-black shadow-sm">Feminist
+                    theories of change</span>
+                <span
+                    class="px-4 py-2 bg-white border border-border rounded-lg text-sm text-black shadow-sm">Psychoeducation</span>
             </div>
 
             <p class="mt-8 text-sm text-black flex items-center justify-center gap-2">
@@ -316,8 +374,10 @@
     <section id="services" class="py-20 md:py-28 bg-white">
         <div class="max-w-6xl mx-auto px-6">
             <div class="mb-12">
-                <h2 class="text-3xl md:text-4xl font-serif text-textDark font-medium tracking-tight mb-4">Services</h2>
-                <p class="text-lg text-black">Support is available for a range of mental health and life challenges, including:</p>
+                <h2 class="text-3xl md:text-4xl font-serif text-textDark font-medium tracking-tight mb-4">My Counselling
+                    Services</h2>
+                <p class="text-lg text-black">Support is available for a range of mental health and life challenges,
+                    including:</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 mb-16">
@@ -333,6 +393,9 @@
                 </div>
                 <div class="flex items-center gap-3 text-black pb-3 border-b border-gray-50">
                     <i data-lucide="check-circle-2" class="w-4 h-4 text-accent"></i> Relationship issues
+                </div>
+                <div class="flex items-center gap-3 text-black pb-3 border-b border-gray-50">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-accent"></i> Couples counselling
                 </div>
                 <div class="flex items-center gap-3 text-black pb-3 border-b border-gray-50">
                     <i data-lucide="check-circle-2" class="w-4 h-4 text-accent"></i> Communication problems
@@ -368,7 +431,7 @@
                     <i data-lucide="check-circle-2" class="w-4 h-4 text-accent"></i> Self-esteem
                 </div>
                 <div class="flex items-center gap-3 text-black pb-3 border-b border-gray-50">
-                    <i data-lucide="check-circle-2" class="w-4 h-4 text-accent"></i> Self development
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-accent"></i> Self-development
                 </div>
                 <div class="flex items-center gap-3 text-black pb-3 border-b border-gray-50">
                     <i data-lucide="check-circle-2" class="w-4 h-4 text-accent"></i> Behaviour change
@@ -388,7 +451,8 @@
             <div class="bg-gray-50 border-l-4 border-gray-300 p-6 rounded-r-lg">
                 <p class="text-sm text-black">
                     <span class="font-semibold block mb-1 text-black">Important safety note:</span>
-                    If you are in immediate danger or need urgent support, contact local emergency services or a crisis support line in your area.
+                    If you are in immediate danger or need urgent support, contact local emergency services or a crisis
+                    support line in your area.
                 </p>
             </div>
         </div>
@@ -397,7 +461,8 @@
     <!-- Qualifications -->
     <section id="qualifications" class="py-20 md:py-28 bg-surface">
         <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-serif text-textDark font-medium tracking-tight mb-12">Qualifications and professional membership</h2>
+            <h2 class="text-3xl md:text-4xl font-serif text-textDark font-medium tracking-tight mb-12">Qualifications
+                and professional membership</h2>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <!-- Col 1 -->
@@ -416,11 +481,13 @@
                         </li>
                         <li class="flex items-start gap-3">
                             <span class="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></span>
-                            <span class="text-black text-base">Graduate Certificate in Client Assessment and Case Management (Men’s Family Violence)</span>
+                            <span class="text-black text-base">Graduate Certificate in Client Assessment and Case
+                                Management (Men’s Family Violence)</span>
                         </li>
                         <li class="flex items-start gap-3">
                             <span class="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></span>
-                            <span class="text-black text-base">Graduate Certificate of Career Education and Development</span>
+                            <span class="text-black text-base">Graduate Certificate of Career Education and
+                                Development</span>
                         </li>
                         <li class="flex items-start gap-3">
                             <span class="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></span>
@@ -428,7 +495,8 @@
                         </li>
                         <li class="flex items-start gap-3">
                             <span class="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></span>
-                            <span class="text-black text-base">Advanced Counselling Skills (Cairn Millar Institute)</span>
+                            <span class="text-black text-base">Advanced Counselling Skills (Cairn Millar
+                                Institute)</span>
                         </li>
                         <li class="flex items-start gap-3">
                             <span class="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></span>
@@ -445,7 +513,8 @@
                     <ul class="space-y-4">
                         <li class="flex items-start gap-3">
                             <span class="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></span>
-                            <span class="text-black text-base">Full member of the Australian Association of Social Workers</span>
+                            <span class="text-black text-base">Full member of the Australian Association of Social
+                                Workers</span>
                         </li>
                         <li class="flex items-start gap-3">
                             <span class="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0"></span>
@@ -462,8 +531,8 @@
                             <i data-lucide="star" class="w-4 h-4 fill-accent text-accent"></i>
                             <i data-lucide="star" class="w-4 h-4 fill-accent text-accent"></i>
                         </div>
-                        <blockquote class="text-black italic text-sm">"A safe space to talk, and a clear plan to move forward."</blockquote>
-                        <cite class="text-xs text-black mt-2 block not-italic">— Client feedback</cite>
+                        <blockquote class="text-black italic text-sm">"A safe, calm, confidential space"</blockquote>
+                        <cite class="text-xs text-black mt-2 block not-italic">— Claudelle Shaw</cite>
                     </div>
                 </div>
             </div>
@@ -473,38 +542,48 @@
     <!-- Contact Section -->
     <section id="contact" class="py-20 md:py-28 bg-surfaceAlt">
         <div class="max-w-2xl mx-auto px-6">
-            <div class="bg-white p-8 md:p-10 rounded-2xl border border-border shadow-[0_4px_20px_-4px_rgba(75,47,115,0.08)]">
+            <div
+                class="bg-white p-8 md:p-10 rounded-2xl border border-border shadow-[0_4px_20px_-4px_rgba(75,47,115,0.08)]">
                 <div class="text-center mb-8">
                     <h2 class="text-3xl font-serif text-primary font-medium tracking-tight mb-3">Contact me</h2>
-                    <p class="text-black">Send a message to enquire about sessions or ask a question. You will receive a reply by email.</p>
+                    <p class="text-black">Send a message to enquire about sessions or ask a question. You will receive a
+                        reply by email.</p>
                 </div>
 
                 <form class="space-y-6" action="https://submit-form.com/LHPddz1qH">
                     <div>
                         <label for="name" class="block text-sm font-medium text-black mb-2">Full name</label>
-                        <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg border border-border bg-white text-textDark focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all" placeholder="Enter your full name">
+                        <input type="text" id="name" name="name"
+                            class="w-full px-4 py-3 rounded-lg border border-border bg-white text-textDark focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all"
+                            placeholder="Enter your full name">
                     </div>
                     <div>
                         <label for="email" class="block text-sm font-medium text-black mb-2">Email address</label>
-                        <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg border border-border bg-white text-textDark focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all" placeholder="name@example.com">
+                        <input type="email" id="email" name="email"
+                            class="w-full px-4 py-3 rounded-lg border border-border bg-white text-textDark focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all"
+                            placeholder="name@example.com">
                     </div>
                     <div>
                         <label for="message" class="block text-sm font-medium text-black mb-2">Message</label>
-                        <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-border bg-white text-textDark focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all" placeholder="How can I help you?"></textarea>
+                        <textarea id="message" name="message" rows="4"
+                            class="w-full px-4 py-3 rounded-lg border border-border bg-white text-textDark focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all"
+                            placeholder="How can I help you?"></textarea>
                     </div>
-                    <button type="submit" class="w-full py-4 bg-primary text-white font-medium rounded-lg hover:bg-secondary transition-colors shadow-lg shadow-primary/20">
+                    <button type="submit"
+                        class="w-full py-4 bg-primary text-white font-medium rounded-lg hover:bg-secondary transition-colors shadow-lg shadow-primary/20">
                         Send message
                     </button>
                 </form>
 
-                <div class="mt-8 pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-center gap-6 text-sm text-black text-center">
+                <div
+                    class="mt-8 pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-center gap-6 text-sm text-black text-center">
                     <div class="flex items-center justify-center gap-2">
                         <i data-lucide="mail" class="w-4 h-4 text-accent"></i>
                         claudelleshaw@hotmail.com
                     </div>
                     <div class="flex items-center justify-center gap-2">
-                        <i data-lucide="file-text" class="w-4 h-4 text-accent"></i>
-                        ABN 79708896801
+                        <i data-lucide="phone" class="w-4 h-4 text-accent"></i>
+                        0400 000 000
                     </div>
                 </div>
             </div>
@@ -517,20 +596,24 @@
             <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-10">
                 <a href="index.html" class="flex flex-col items-center md:items-start group">
                     <span class="font-serif text-2xl tracking-tight font-semibold leading-none">Claudelle Shaw</span>
-                    <span class="text-accentSoft text-[10px] tracking-[0.25em] uppercase mt-1 opacity-70">Counselling</span>
+                    <span
+                        class="text-accentSoft text-[10px] tracking-[0.25em] uppercase mt-1 opacity-70">Counselling</span>
                 </a>
 
                 <div class="flex flex-wrap justify-center gap-6 md:gap-8">
                     <a href="index.html" class="text-sm text-accentSoft hover:text-white transition-colors">Home</a>
                     <a href="about.html" class="text-sm text-accentSoft hover:text-white transition-colors">About</a>
-                    <a href="services.html" class="text-sm text-accentSoft hover:text-white transition-colors">Services</a>
-                    <a href="index.html#contact" class="text-sm text-accentSoft hover:text-white transition-colors">Contact</a>
+                    <a href="services.html"
+                        class="text-sm text-accentSoft hover:text-white transition-colors">Services</a>
+                    <a href="index.html#contact"
+                        class="text-sm text-accentSoft hover:text-white transition-colors">Contact</a>
                 </div>
             </div>
 
-            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-accentSoft/50">
+            <div
+                class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-accentSoft/50">
                 <p>© <span id="footer-year"></span> Claudelle Shaw Counselling. All rights reserved.</p>
-                <p>Claudelle Shaw Counselling. ABN 79708896801. Email claudelleshaw@hotmail.com</p>
+                <p>Claudelle Shaw Counselling. Email claudelleshaw@hotmail.com</p>
             </div>
         </div>
     </footer>
@@ -545,4 +628,6 @@
         lucide.createIcons();
     </script>
 
-</body></html>
+</body>
+
+</html>
