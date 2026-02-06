@@ -5,33 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Claudelle Shaw Counselling | Claudelle Shaw</title>
 
-    <!-- Fonts: Playfair Display (Serif) and Aptos (Local) -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&amp;display=swap"
         rel="stylesheet">
 
-    <!-- Tailwind CSS -->
+
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Icons -->
+
     <script src="https://unpkg.com/lucide@latest"></script>
 
-    <!-- Tailwind Config for Custom Colors -->
+
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        primary: '#4B2F73',    // Light Purple
-                        secondary: '#5B3D86',  // Soft Purple
-                        accent: '#C7A6F2',     // Lavender
-                        accentSoft: '#E1D0FA', // Soft Lavender
-                        surface: '#F6F0FF',    // Light Surface
-                        surfaceAlt: '#FBF8FF', // Alt Light Surface
-                        border: '#E9DFF5',     // Border
-                        textDark: '#2D2534',   // Text on Light
-                        textLight: '#FFFFFF',  // Text on Dark
+                        primary: '#4B2F73',    
+                        secondary: '#5B3D86',  
+                        accent: '#C7A6F2',     
+                        accentSoft: '#E1D0FA', 
+                        surface: '#F6F0FF',    
+                        surfaceAlt: '#FBF8FF', 
+                        border: '#E9DFF5',     
+                        textDark: '#2D2534',   
+                        textLight: '#FFFFFF',  
                     },
                     fontFamily: {
                         sans: ['Aptos', 'sans-serif'],
@@ -83,13 +83,13 @@
             font-display: swap;
         }
 
-        /* Custom Utilities */
+        
         body {
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
 
-        /* Mobile Menu Toggle Logic */
+        
         #mobile-menu-toggle:checked~#mobile-menu {
             display: block;
             animation: fadeIn 0.2s ease-out;
@@ -107,7 +107,7 @@
             }
         }
 
-        /* Gradient Text Utility */
+        
         .text-gradient {
             background-clip: text;
             -webkit-background-clip: text;
@@ -129,11 +129,11 @@
 
 <body class="bg-surfaceAlt text-textDark font-sans selection:bg-accent selection:text-primary">
 
-    <!-- Header / Sticky Nav -->
+
     <header
         class="fixed top-0 w-full z-50 bg-[#6E5B9A] backdrop-blur-md border-b border-white/10 shadow-lg shadow-black/5">
 
-        <!-- Top Utility Bar (Trust Signals) -->
+
         <div class="hidden md:block bg-[#D7C8ED] py-2">
             <div
                 class="max-w-6xl mx-auto px-6 flex justify-end items-center gap-6 text-xs text-black font-medium tracking-wide">
@@ -147,7 +147,7 @@
         </div>
 
         <nav class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-            <!-- Logo -->
+
             <a href="index.html" class="flex items-center gap-3 group">
                 <svg class="logo-mark flex-shrink-0" viewBox="0 0 867 641" aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
@@ -178,7 +178,7 @@
                 </div>
             </a>
 
-            <!-- Desktop Links -->
+
             <div class="hidden md:flex items-center gap-8">
                 <a href="index.html"
                     class="text-sm text-textLight/80 hover:text-accent transition-colors font-medium">Home</a>
@@ -192,14 +192,14 @@
                 </a>
             </div>
 
-            <!-- Mobile Menu Button -->
+
             <label for="mobile-menu-toggle" class="md:hidden p-2 text-textLight cursor-pointer">
                 <i data-lucide="menu" class="w-6 h-6"></i>
             </label>
             <input type="checkbox" id="mobile-menu-toggle" name="mobile-menu-toggle" class="hidden">
         </nav>
 
-        <!-- Mobile Menu Dropdown -->
+
         <div id="mobile-menu"
             class="hidden absolute top-full left-0 w-full bg-[#D7C8ED] border-b border-white/10 shadow-2xl md:hidden">
             <div class="flex flex-col p-6 gap-4 text-center">
@@ -216,14 +216,14 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+
     <section id="home" class="relative pt-32 pb-24 md:pt-48 md:pb-32 overflow-hidden bg-black">
 
-        <!-- Background Image & Overlay -->
+
         <div class="absolute inset-0 z-0 select-none">
-            <!-- Unsplash Image: Supportive conversation -->
+
             <img src="hero-bg.jpg" alt="Claudelle Shaw counselling" class="w-full h-full object-cover opacity-80">
-            <!-- Lighter gradient overlay for better image visibility while keeping text readable -->
+
             <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/20 to-transparent"></div>
             <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/10"></div>
         </div>
@@ -265,7 +265,7 @@
         </div>
     </section>
 
-    <!-- About Heading -->
+
     <section class="py-12 bg-surface border-b border-border">
         <div class="max-w-6xl mx-auto px-6 text-center">
             <h2 class="text-3xl md:text-4xl font-serif text-textDark font-medium tracking-tight">About Claudelle Shaw
@@ -274,12 +274,12 @@
         </div>
     </section>
 
-    <!-- About Section -->
+
     <section id="about" class="py-20 md:py-28 bg-white">
         <div class="max-w-6xl mx-auto px-6">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
 
-                <!-- Left Column Heading -->
+
                 <div class="lg:col-span-4">
                     <span class="text-primary font-semibold tracking-wider text-xs uppercase mb-3 block">About the
                         practice</span>
@@ -289,7 +289,7 @@
                     <div class="h-1 w-20 bg-accent mt-6 rounded-full"></div>
                 </div>
 
-                <!-- Right Column Content -->
+
                 <div class="lg:col-span-8 space-y-6">
                     <div class="flex flex-col sm:flex-row gap-6 items-start">
                         <img src="Claudelle.jpg" alt="Claudelle Shaw"
@@ -322,9 +322,9 @@
         </div>
     </section>
 
-    <!-- Approach & Modalities -->
+
     <section id="approach" class="py-20 md:py-28 bg-surfaceAlt border-y border-border relative overflow-hidden">
-        <!-- Decorative bg blob -->
+
         <div
             class="absolute top-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2">
         </div>
@@ -338,7 +338,7 @@
             </p>
 
             <div class="flex flex-wrap justify-center gap-3">
-                <!-- Modality Tags -->
+
                 <span class="px-4 py-2 bg-white border border-border rounded-lg text-sm text-black shadow-sm">Trauma
                     focused therapy</span>
                 <span class="px-4 py-2 bg-white border border-border rounded-lg text-sm text-black shadow-sm">Strength
@@ -370,7 +370,7 @@
         </div>
     </section>
 
-    <!-- Support Areas -->
+
     <section id="services" class="py-20 md:py-28 bg-white">
         <div class="max-w-6xl mx-auto px-6">
             <div class="mb-12">
@@ -381,7 +381,7 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 mb-16">
-                <!-- List Items -->
+
                 <div class="flex items-center gap-3 text-black pb-3 border-b border-gray-50">
                     <i data-lucide="check-circle-2" class="w-4 h-4 text-accent"></i> Depression and mood disorders
                 </div>
@@ -447,7 +447,7 @@
                 </div>
             </div>
 
-            <!-- Safety Note -->
+
             <div class="bg-gray-50 border-l-4 border-gray-300 p-6 rounded-r-lg">
                 <p class="text-sm text-black">
                     <span class="font-semibold block mb-1 text-black">Important safety note:</span>
@@ -458,14 +458,14 @@
         </div>
     </section>
 
-    <!-- Qualifications -->
+
     <section id="qualifications" class="py-20 md:py-28 bg-surface">
         <div class="max-w-6xl mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-serif text-textDark font-medium tracking-tight mb-12">Qualifications
                 and professional membership</h2>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <!-- Col 1 -->
+
                 <div>
                     <h3 class="text-lg font-semibold text-primary mb-6 flex items-center gap-2">
                         <i data-lucide="award" class="w-5 h-5 text-accent"></i> Education
@@ -505,7 +505,7 @@
                     </ul>
                 </div>
 
-                <!-- Col 2 -->
+
                 <div>
                     <h3 class="text-lg font-semibold text-primary mb-6 flex items-center gap-2">
                         <i data-lucide="users" class="w-5 h-5 text-accent"></i> Membership &amp; Development
@@ -522,7 +522,7 @@
                         </li>
                     </ul>
 
-                    <!-- Testimonial 2 -->
+
                     <div class="mt-10 p-6 bg-white rounded-xl border border-border shadow-sm">
                         <div class="flex gap-1 mb-2">
                             <i data-lucide="star" class="w-4 h-4 fill-accent text-accent"></i>
@@ -539,7 +539,7 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+
     <section id="contact" class="py-20 md:py-28 bg-surfaceAlt">
         <div class="max-w-2xl mx-auto px-6">
             <div
@@ -550,8 +550,14 @@
                         reply by email.</p>
                 </div>
 
-                <form name="contact-form" class="space-y-6" action="https://submit-form.com/LHPddz1qH" method="POST">
-                    <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off">
+
+                <form name="contact-form" class="space-y-6" action="https://submit-form.com/LHPddz1qH" method="POST"
+                    accept-charset="UTF-8">
+                    <div style="position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden;"
+                        aria-hidden="true">
+                        <label>Leave this field empty</label>
+                        <input type="text" name="company_website" tabindex="-1" autocomplete="off">
+                    </div>
                     <div>
                         <label for="name" class="block text-sm font-medium text-black mb-2">Full name</label>
                         <input type="text" id="name" name="name" autocomplete="name" required
@@ -566,13 +572,13 @@
                     </div>
                     <div>
                         <label for="message" class="block text-sm font-medium text-black mb-2">Message</label>
-                        <textarea id="message" name="message" rows="4" required
+                        <textarea id="message" name="message" rows="4" required minlength="10" autocomplete="off"
                             class="w-full px-4 py-3 rounded-lg border border-border bg-white text-textDark focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all"
                             placeholder="How can I help you?"></textarea>
                     </div>
                     <button type="submit" name="submit"
                         class="w-full py-4 bg-primary text-white font-medium rounded-lg hover:bg-secondary transition-colors shadow-lg shadow-primary/20">
-                        Send message
+                        Send
                     </button>
                 </form>
 
@@ -591,7 +597,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
+
     <footer class="bg-primary text-textLight py-12 border-t border-white/5">
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-10">
@@ -619,7 +625,7 @@
         </div>
     </footer>
 
-    <!-- Initialize Icons -->
+
     <script>
         const footerYear = document.getElementById('footer-year');
         if (footerYear) {
