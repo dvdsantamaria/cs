@@ -667,13 +667,13 @@
 	    </script>
 
 	    <script>
-	        document.addEventListener('DOMContentLoaded', () => {
+	        const initFormEnhancement = () => {
 	            const FORM_ID = 'contactForm';
 	            const form = document.getElementById(FORM_ID);
 	            if (!form) return;
 	            if (form.dataset.enhanced === 'true') return;
 
-		            const FORMSPARK_URL = 'https://submit-form.com/6TPDwdvi9';
+	            const FORMSPARK_URL = 'https://submit-form.com/6TPDwdvi9';
 
 	            if (!window.fetch || !window.FormData || !window.URLSearchParams) return;
 
@@ -716,11 +716,23 @@
 	            form.querySelectorAll('input[name="_redirect"]').forEach((el) => el.remove());
 
 	            form.addEventListener('submit', async (e) => {
+	                const gotcha = form.querySelector('input[name="_gotcha"]');
+	                if (gotcha && String(gotcha.value || '').trim().length > 0) {
+	                    e.preventDefault();
+	                    e.stopImmediatePropagation();
+	                    showErrorToast('Please try again.');
+	                    return;
+	                }
+
+	                if (typeof form.checkValidity === 'function' && !form.checkValidity()) {
+	                    if (typeof form.reportValidity === 'function') {
+	                        form.reportValidity();
+	                    }
+	                    return;
+	                }
+
 	                e.preventDefault();
 	                e.stopImmediatePropagation();
-
-	                const gotcha = form.querySelector('input[name="_gotcha"]');
-	                if (gotcha && String(gotcha.value || '').trim().length > 0) return;
 
 	                const submitButton =
 	                    form.querySelector('button[type="submit"]') ||
@@ -771,7 +783,13 @@
 	                    if (submitButton) submitButton.disabled = false;
 	                }
 	            }, { capture: true });
-	        });
+	        };
+
+	        if (document.readyState === 'loading') {
+	            document.addEventListener('DOMContentLoaded', initFormEnhancement);
+	        } else {
+	            initFormEnhancement();
+	        }
 	    </script>
 
 	</body>
